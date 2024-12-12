@@ -30,26 +30,50 @@ class AboutPage extends StatelessWidget {
               child: Container(
                 padding: const EdgeInsets.all(16.0),
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 194, 235, 255).withOpacity(0.7), // Warna abu-abu dengan opacity 0.7
+                  color: const Color.fromARGB(151, 255, 255, 255).withOpacity(0.8), // Warna dengan opacity
                   borderRadius: BorderRadius.circular(10), // Membuat border melengkung
                 ),
                 child: Column(
                   mainAxisSize: MainAxisSize.min, // Sesuaikan ukuran kolom dengan konten
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    Text(
-                      'Catharsis Shoe Care merupakan brand yang bergerak di bidang laundry sepatu. Kami berlokasi di Jl. Sekolahan No.330, Malang.',
-                      style: TextStyle(fontSize: 18), // Warna teks putih agar kontras
+                  children: [
+                    const Text(
+                      'Tentang Catharsis Shoe Care',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueAccent, // Teks judul berwarna biru
+                      ),
                     ),
-                    SizedBox(height: 10),
-                    Text(
-                      'Kami selalu menggunakan bahan-bahan premium dari Fama untuk hasil yang maksimal tanpa merusak sepatu.',
-                      style: TextStyle(fontSize: 18),
+                    const SizedBox(height: 20),
+                    const Text(
+                      'Catharsis Shoe Care merupakan brand yang bergerak di bidang laundry sepatu. Kami berlokasi di:',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black87, // Warna teks lebih gelap untuk teks normal
+                      ),
                     ),
-                    SizedBox(height: 10),
-                    Text(
-                      'Surga di bawah telapak kaki ibu, cuci sepatu ibumu hanya di Catharsis Shoe Care.',
-                      style: TextStyle(fontSize: 18),
+                    const SizedBox(height: 10),
+                    Row(
+                      children: const [
+                        Icon(Icons.location_on, color: Colors.redAccent), // Icon location untuk menandai alamat
+                        SizedBox(width: 5),
+                        Text(
+                          'Jl. Sekolahan No.330, Malang',
+                          style: TextStyle(fontSize: 18),
+                        ),
+                      ],
+                    ),
+                    
+                    const SizedBox(height: 20),
+                    const Text(
+                      'Aplikasi ini harapannya dapat mempermudah pengguna dalam pemesanan layanan kami.',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontStyle: FontStyle.italic,
+                        color: Colors.black87,
+                      ),
                     ),
                   ],
                 ),
