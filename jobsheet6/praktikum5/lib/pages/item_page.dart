@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:praktikum5/model/item.dart';
 
 class ItemPage extends StatelessWidget {

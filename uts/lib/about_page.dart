@@ -33,11 +33,11 @@ class AboutPage extends StatelessWidget {
                   color: const Color.fromARGB(151, 255, 255, 255).withOpacity(0.8), // Warna dengan opacity
                   borderRadius: BorderRadius.circular(10), // Membuat border melengkung
                 ),
-                child: Column(
+                child: const Column(
                   mainAxisSize: MainAxisSize.min, // Sesuaikan ukuran kolom dengan konten
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       'Tentang Catharsis Shoe Care',
                       style: TextStyle(
                         fontSize: 24,
@@ -45,8 +45,8 @@ class AboutPage extends StatelessWidget {
                         color: Colors.blueAccent, // Teks judul berwarna biru
                       ),
                     ),
-                    const SizedBox(height: 20),
-                    const Text(
+                    SizedBox(height: 20),
+                    Text(
                       'Catharsis Shoe Care merupakan brand yang bergerak di bidang laundry sepatu. Kami berlokasi di:',
                       style: TextStyle(
                         fontSize: 18,
@@ -54,9 +54,9 @@ class AboutPage extends StatelessWidget {
                         color: Colors.black87, // Warna teks lebih gelap untuk teks normal
                       ),
                     ),
-                    const SizedBox(height: 10),
+                    SizedBox(height: 10),
                     Row(
-                      children: const [
+                      children: [
                         Icon(Icons.location_on, color: Colors.redAccent), // Icon location untuk menandai alamat
                         SizedBox(width: 5),
                         Text(
@@ -66,8 +66,8 @@ class AboutPage extends StatelessWidget {
                       ],
                     ),
                     
-                    const SizedBox(height: 20),
-                    const Text(
+                    SizedBox(height: 20),
+                    Text(
                       'Aplikasi ini harapannya dapat mempermudah pengguna dalam pemesanan layanan kami.',
                       style: TextStyle(
                         fontSize: 18,
